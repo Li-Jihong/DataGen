@@ -6,7 +6,7 @@ import os
 import subprocess
 import time
 
-version_file = 'basicsrexamples/version.py'
+version_file = 'datagen/version.py'
 
 
 def readme():
@@ -82,15 +82,15 @@ def get_requirements(filename='requirements.txt'):
 if __name__ == '__main__':
     write_version_py()
     setup(
-        name='basicsrexamples',
+        name='datagen',
         version=get_version(),
-        description='BasicSR Examples',
+        description='data gengeration for object detection',
         long_description=readme(),
         long_description_content_type='text/markdown',
-        author='Xintao Wang',
-        author_email='xintao.wang@outlook.com',
-        keywords='computer vision, pytorch, basicsr, image restoration, super-resolution',
-        url='https://github.com/xinntao/BasicSR-examples',
+        author='Jihong Li nankai university',
+        author_email='jihongli0425@163.com',
+        keywords='computer vision, pytorch, diffusion, data generation ,basicsr, object detection',
+        url='https://github.com/Li-Jihong/DataGen',
         include_package_data=True,
         packages=find_packages(exclude=('options', 'datasets', 'experiments', 'results', 'tb_logger', 'wandb')),
         classifiers=[
